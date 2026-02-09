@@ -1,0 +1,1 @@
+set gitignore in global
