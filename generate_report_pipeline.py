@@ -39,12 +39,14 @@ def step1_process_csv_data():
 
 def step2_generate_html():
     """
-    Step 2: Convert text report to HTML
+    Step 2: Convert text report to HTML (generates 2 versions)
     Runs: generate_corporate_html_report.py
-    Output: MM_Report_DD_Mon_-_DD_Mon.html
+    Output: 
+      - MM_Report_DD_Mon_-_DD_Mon_for_MM_Team.html
+      - MM_Report_DD_Mon_-_DD_Mon_for_Client.html
     """
     print("\n" + "="*60)
-    print("STEP 2: Generating HTML Report")
+    print("STEP 2: Generating HTML Reports (MM Team & Client versions)")
     print("="*60)
     
     try:
@@ -65,12 +67,14 @@ def step2_generate_html():
 
 def step3_generate_pdf():
     """
-    Step 3: Convert HTML report to PDF
+    Step 3: Convert HTML reports to PDF (generates 2 versions)
     Runs: generate_corporate_pdf_browser.py
-    Output: MM_Report_DD_Mon_-_DD_Mon.pdf
+    Output: 
+      - MM_Report_DD_Mon_-_DD_Mon_for_MM_Team.pdf
+      - MM_Report_DD_Mon_-_DD_Mon_for_Client.pdf
     """
     print("\n" + "="*60)
-    print("STEP 3: Generating PDF Report")
+    print("STEP 3: Generating PDF Reports (MM Team & Client versions)")
     print("="*60)
     
     # Verify HTML file exists

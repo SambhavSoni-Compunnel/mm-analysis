@@ -184,8 +184,14 @@ def parse_report(filepath):
     return data
 
 
-def generate_html(data, output_path):
-    """Generate production-quality corporate HTML report."""
+def generate_html(data, output_path, include_performance_analysis=True):
+    """Generate production-quality corporate HTML report.
+    
+    Args:
+        data: Parsed report data
+        output_path: Path to save the HTML file
+        include_performance_analysis: If True, includes the Performance Analysis section
+    """
     
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -940,7 +946,11 @@ def generate_html(data, output_path):
                     </table>
                 </div>
             </section>
-            
+"""
+    
+    # Performance Analysis section (only included for MM Team version)
+    if include_performance_analysis:
+        html += """            
             <section class="section">
                 <h2 class="section-title">Performance Analysis</h2>
                 <div class="section-divider"></div>
@@ -1082,10 +1092,33 @@ def main():
     except:
         output_file = "MM_Report.html"
     
-    print(f"Generating corporate HTML report: {output_file}")
-    generate_html(data, output_file)
+#     print(f"Generating corporate HTML report: {output_file}")
+#     generate_html(data, output_file)
     
-    print("Done!")
+#     print("Done!")
+
+
+# # if __name__ == "__main__":
+# #     main()
+
+#         base_filename = f"MM_Report_{start_str}_-_{end_str}"
+#     except:
+#         base_filename = "MM_Report"
+    
+    # Generate two versions of the report
+    # 1. For MM Team (with Performance Analysis)
+    mm_team_file = f"{output_file}_for_MM_Team.html"
+    print(f"Generating report for MM Team: {mm_team_file}")
+    generate_html(data, mm_team_file, include_performance_analysis=True)
+    
+    # 2. For Client (without Performance Analysis)
+    client_file = f"{output_file}_for_Client.html"
+    print(f"Generating report for Client: {client_file}")
+    generate_html(data, client_file, include_performance_analysis=False)
+    
+    print("Done! Two versions generated.")
+    print(f"  - {mm_team_file} (includes Performance Analysis)")
+    print(f"  - {client_file} (no Performance Analysis)")
 
 
 if __name__ == "__main__":
