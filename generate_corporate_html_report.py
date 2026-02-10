@@ -59,7 +59,8 @@ def parse_report(filepath):
     not_delivered_rate = 100.0 - delivery_rate if sent > 0 else 0.0
     engagement_rate = (opened / delivered * 100) if delivered > 0 else 0.0
     not_engaged_rate = 100.0 - engagement_rate if delivered > 0 else 0.0
-    failure_rate = ((hard_bounce + soft_bounce) / sent * 100) if sent > 0 else 0.0
+    soft_bounce_rate = (soft_bounce / sent * 100) if sent > 0 else 0.0
+    hard_bounce_rate = (hard_bounce / sent * 100) if sent > 0 else 0.0
     unsubscribe_rate = (unsubscribed / delivered * 100) if delivered > 0 else 0.0
     
     # Calculate percentages relative to sent for display in the card
@@ -76,8 +77,10 @@ def parse_report(filepath):
         'opened_pct_of_sent': round(opened_pct_of_sent, 1),
         'engagement_rate': round(engagement_rate, 1),
         'not_engaged_rate': round(not_engaged_rate, 1),
-        'failures': hard_bounce + soft_bounce,
-        'failure_rate': round(failure_rate, 1),
+        'soft_bounce': soft_bounce,
+        'soft_bounce_rate': round(soft_bounce_rate, 1),
+        'hard_bounce': hard_bounce,
+        'hard_bounce_rate': round(hard_bounce_rate, 1),
         'unsubscribed': unsubscribed,
         'unsubscribe_pct_of_sent': round(unsubscribe_pct_of_sent, 1),
         'unsubscribe_rate': round(unsubscribe_rate, 1)
@@ -759,17 +762,31 @@ def generate_html(data, output_path):
                         </div>
 """
     
-    # Failures
-    failures_width = (metrics['failures'] / max_value * 100) if max_value > 0 else 0
+    # Temporary Failures (Soft Bounce)
+    soft_bounce_width = (metrics['soft_bounce'] / max_value * 100) if max_value > 0 else 0
     html += f"""                        <div class="bar-chart-row">
-                            <div class="bar-label">Failures</div>
+                            <div class="bar-label">Temporary Failures</div>
                             <div class="bar-container">
-                                <div class="bar" style="width: {failures_width}%"></div>
-                                <div class="bar-value">{metrics['failures']:,} ({metrics['failure_rate']}%)</div>
+                                <div class="bar" style="width: {soft_bounce_width}%"></div>
+                                <div class="bar-value">{metrics['soft_bounce']:,} ({metrics['soft_bounce_rate']}%)</div>
                             </div>
                         </div>
                         <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
-                            Emails that couldn't be delivered due to incorrect email addresses or temporary issues
+                            Temporary delivery issues (mailbox full, server temporarily unavailable)
+                        </div>
+"""
+    
+    # Permanent Failures (Hard Bounce)
+    hard_bounce_width = (metrics['hard_bounce'] / max_value * 100) if max_value > 0 else 0
+    html += f"""                        <div class="bar-chart-row">
+                            <div class="bar-label">Permanent Failures</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: {hard_bounce_width}%"></div>
+                                <div class="bar-value">{metrics['hard_bounce']:,} ({metrics['hard_bounce_rate']}%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
+                            Invalid or non-existent email addresses
                         </div>
 """
     
