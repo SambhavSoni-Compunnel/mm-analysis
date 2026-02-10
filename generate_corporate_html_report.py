@@ -141,12 +141,18 @@ def parse_report(filepath):
 def generate_html(data, output_path):
     """Generate production-quality corporate HTML report."""
     
+    # Calculate average delivery rate
+    avg_delivery_rate = 0.0
+    if data['user_volume']:
+        total_rate = sum(user['rate'] for user in data['user_volume'])
+        avg_delivery_rate = total_rate / len(data['user_volume'])
+    
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mailchimp Email Analytics Report</title>
+    <title>Market Minder Email Analytics Report</title>
     <style>
         @page {{
             size: A4 landscape;
@@ -588,7 +594,7 @@ def generate_html(data, output_path):
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="header-title">Mailchimp Email Analytics Report</h1>
+            <h1 class="header-title">Market Minder Email Analytics Report</h1>
             <div class="header-meta">
                 Report Period: {data['date_from']} to {data['date_to']} | Generated: {data['generated']}
             </div>
@@ -602,6 +608,11 @@ def generate_html(data, output_path):
                     <div class="metric-subtext">All users combined</div>
                 </div>
                 <div class="metric-card">
+                    <div class="metric-label">Avg Delivery Rate</div>
+                    <div class="metric-value">{avg_delivery_rate:.1f}%</div>
+                    <div class="metric-subtext">Across all active users</div>
+                </div>
+                <div class="metric-card">
                     <div class="metric-label">Active Days</div>
                     <div class="metric-value">{data['active_days']}</div>
                     <div class="metric-subtext">Days with activity</div>
@@ -610,11 +621,6 @@ def generate_html(data, output_path):
                     <div class="metric-label">Unique Senders</div>
                     <div class="metric-value">{data['unique_senders']}</div>
                     <div class="metric-subtext">Active email senders</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">Target Achievement</div>
-                    <div class="metric-value">{data['overall_achievement']:.1f}%</div>
-                    <div class="metric-subtext">Of 500 emails/user/day</div>
                 </div>
             </section>
             
@@ -929,7 +935,7 @@ def generate_html(data, output_path):
         
         <footer class="footer">
             <p>Generated on {data['generated']}</p>
-            <p>Mailchimp Email Analytics Report</p>
+            <p>Market Minder Email Analytics Report</p>
         </footer>
     </div>
 </body>
@@ -952,9 +958,9 @@ def main():
         date_to = datetime.strptime(data['date_to'], '%Y-%m-%d')
         start_str = date_from.strftime('%d_%b')
         end_str = date_to.strftime('%d_%b')
-        output_file = f"MM_Report_{start_str}_-_{end_str}.html"
+        output_file = f"output/html/MM_Report_{start_str}_-_{end_str}.html"
     except:
-        output_file = "MM_Report.html"
+        output_file = "output/html/MM_Report.html"
     
     print(f"Generating corporate HTML report: {output_file}")
     generate_html(data, output_file)
