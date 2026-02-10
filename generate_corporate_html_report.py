@@ -43,6 +43,46 @@ def parse_report(filepath):
         })
     data['event_types'] = event_types
     
+    # Extract specific email metrics for calculations
+    event_dict = {evt['type'].lower().replace(' ', '_'): int(evt['count'].replace(',', '')) for evt in event_types}
+    
+    # Map event names (case-insensitive lookup with common variations)
+    sent = event_dict.get('send', 0) or event_dict.get('sent', 0)
+    delivered = event_dict.get('delivered', 0)
+    opened = event_dict.get('open', 0) or event_dict.get('opened', 0)
+    hard_bounce = event_dict.get('hard_bounce', 0)
+    soft_bounce = event_dict.get('soft_bounce', 0)
+    unsubscribed = event_dict.get('unsub', 0) or event_dict.get('unsubscribed', 0)
+    
+    # Calculate rates with safe division
+    delivery_rate = (delivered / sent * 100) if sent > 0 else 0.0
+    not_delivered_rate = 100.0 - delivery_rate if sent > 0 else 0.0
+    engagement_rate = (opened / delivered * 100) if delivered > 0 else 0.0
+    not_engaged_rate = 100.0 - engagement_rate if delivered > 0 else 0.0
+    failure_rate = ((hard_bounce + soft_bounce) / sent * 100) if sent > 0 else 0.0
+    unsubscribe_rate = (unsubscribed / delivered * 100) if delivered > 0 else 0.0
+    
+    # Calculate percentages relative to sent for display in the card
+    opened_pct_of_sent = (opened / sent * 100) if sent > 0 else 0.0
+    unsubscribe_pct_of_sent = (unsubscribed / sent * 100) if sent > 0 else 0.0
+    
+    # Store email metrics
+    data['email_metrics'] = {
+        'sent': sent,
+        'delivered': delivered,
+        'delivery_rate': round(delivery_rate, 1),
+        'not_delivered_rate': round(not_delivered_rate, 1),
+        'opened': opened,
+        'opened_pct_of_sent': round(opened_pct_of_sent, 1),
+        'engagement_rate': round(engagement_rate, 1),
+        'not_engaged_rate': round(not_engaged_rate, 1),
+        'failures': hard_bounce + soft_bounce,
+        'failure_rate': round(failure_rate, 1),
+        'unsubscribed': unsubscribed,
+        'unsubscribe_pct_of_sent': round(unsubscribe_pct_of_sent, 1),
+        'unsubscribe_rate': round(unsubscribe_rate, 1)
+    }
+    
     match = re.search(r'Date Range: (\d{4}-\d{2}-\d{2}) to (\d{4}-\d{2}-\d{2})', content)
     data['date_from'] = match.group(1) if match else 'N/A'
     data['date_to'] = match.group(2) if match else 'N/A'
@@ -602,9 +642,9 @@ def generate_html(data, output_path):
                     <div class="metric-subtext">All users combined</div>
                 </div>
                 <div class="metric-card">
-                    <div class="metric-label">Target Achievement</div>
-                    <div class="metric-value">{data['overall_achievement']:.1f}%</div>
-                    <div class="metric-subtext">Of 500 emails/user/day</div>
+                    <div class="metric-label">Avg Delivery Rate</div>
+                    <div class="metric-value">{data['email_metrics']['delivery_rate']}%</div>
+                    <div class="metric-subtext">Successfully delivered</div>
                 </div>
                 <div class="metric-card">
                     <div class="metric-label">Active Days</div>
@@ -663,18 +703,74 @@ def generate_html(data, output_path):
                     </div>
                     
                     <div class="card">
-                        <h3 class="card-title">Event Type Distribution</h3>
+                        <h3 class="card-title">Email Metrics Overview</h3>
 """
     
-    max_count = max([int(evt['count'].replace(',', '')) for evt in data['event_types']]) if data['event_types'] else 1
-    for evt in data['event_types'][:7]:
-        count = int(evt['count'].replace(',', ''))
-        width = (count / max_count * 100) if max_count > 0 else 0
-        html += f"""                        <div class="bar-chart-row">
-                            <div class="bar-label">{evt['type']}</div>
+    metrics = data['email_metrics']
+    max_value = metrics['sent']
+    
+    # Sent
+    html += f"""                        <div class="bar-chart-row">
+                            <div class="bar-label">Sent</div>
                             <div class="bar-container">
-                                <div class="bar" style="width: {width}%"></div>
-                                <div class="bar-value">{evt['count']} ({evt['pct']:.1f}%)</div>
+                                <div class="bar" style="width: 100%"></div>
+                                <div class="bar-value">{metrics['sent']:,} (100%)</div>
+                            </div>
+                        </div>
+"""
+    
+    # Delivered
+    delivered_width = (metrics['delivered'] / max_value * 100) if max_value > 0 else 0
+    html += f"""                        <div class="bar-chart-row">
+                            <div class="bar-label">Delivered</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: {delivered_width}%"></div>
+                                <div class="bar-value">{metrics['delivered']:,} ({metrics['delivery_rate']}%)</div>
+                            </div>
+                        </div>
+"""
+    
+    # Not delivered note
+    html += f"""                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
+                            {metrics['not_delivered_rate']}% not delivered
+                        </div>
+"""
+    
+    # Opened
+    opened_width = (metrics['opened'] / max_value * 100) if max_value > 0 else 0
+    html += f"""                        <div class="bar-chart-row">
+                            <div class="bar-label">Opened</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: {opened_width}%"></div>
+                                <div class="bar-value">{metrics['opened']:,} ({metrics['engagement_rate']}%)</div>
+                            </div>
+                        </div>
+"""
+    
+    # Not engaged note
+    html += f"""                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
+                            {metrics['not_engaged_rate']}% did not engage
+                        </div>
+"""
+    
+    # Failures
+    failures_width = (metrics['failures'] / max_value * 100) if max_value > 0 else 0
+    html += f"""                        <div class="bar-chart-row">
+                            <div class="bar-label">Failures</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: {failures_width}%"></div>
+                                <div class="bar-value">{metrics['failures']:,} ({metrics['failure_rate']}%)</div>
+                            </div>
+                        </div>
+"""
+    
+    # Unsubscribed
+    unsub_width = (metrics['unsubscribed'] / max_value * 100) if max_value > 0 else 0
+    html += f"""                        <div class="bar-chart-row">
+                            <div class="bar-label">Unsubscribed</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: {unsub_width}%"></div>
+                                <div class="bar-value">{metrics['unsubscribed']:,} ({metrics['unsubscribe_rate']}%)</div>
                             </div>
                         </div>
 """
