@@ -98,14 +98,17 @@ def parse_report(filepath):
     if sender_section:
         sender_pattern = r'(\S+@\S+)\s+\|\s+(Yes|No)\s+\|\s+([\d,]+)\s+\|\s+(\d+)\s+\|\s+([\d.]+)\s+\|\s+([\d]+)'
         for m in re.finditer(sender_pattern, sender_section.group()):
-            top_senders.append({
-                'email': m.group(1),
-                'registered': m.group(2),
-                'total_sent': m.group(3),
-                'active_days': m.group(4),
-                'avg_day': m.group(5),
-                'max_day': m.group(6)
-            })
+            email = m.group(1)
+            # Exclude sambhav.soni and shubham.rastogi emails
+            if 'sambhav.soni@' not in email.lower() and 'shubham.rastogi@' not in email.lower():
+                top_senders.append({
+                    'email': email,
+                    'registered': m.group(2),
+                    'total_sent': m.group(3),
+                    'active_days': m.group(4),
+                    'avg_day': m.group(5),
+                    'max_day': m.group(6)
+                })
     data['top_senders'] = top_senders[:10]
     
     user_volume = []
