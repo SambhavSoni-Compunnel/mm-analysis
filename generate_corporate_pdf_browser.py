@@ -8,12 +8,20 @@ Installation:
 """
 from playwright.sync_api import sync_playwright
 import os
-
-INPUT_HTML = "email_analytics_report_corporate.html"
-OUTPUT_PDF = "email_analytics_report_corporate.pdf"
+import glob
 
 def convert_html_to_pdf():
     """Convert the corporate HTML report to PDF using headless browser"""
+    
+    # Find the most recent MM_Report HTML file
+    html_files = glob.glob("MM_Report_*.html")
+    if not html_files:
+        print("Error: No MM_Report_*.html file found")
+        return
+    
+    # Use the most recently modified file
+    INPUT_HTML = max(html_files, key=os.path.getmtime)
+    OUTPUT_PDF = INPUT_HTML.replace('.html', '.pdf')
     
     # Get absolute path to HTML file
     html_path = os.path.abspath(INPUT_HTML)

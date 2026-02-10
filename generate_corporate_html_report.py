@@ -7,7 +7,6 @@ import re
 from datetime import datetime
 
 INPUT_FILE = "test/email_analytics_report_v3.txt"
-OUTPUT_FILE = "email_analytics_report_corporate.html"
 
 
 def parse_report(filepath):
@@ -947,8 +946,18 @@ def main():
     print("Parsing report...")
     data = parse_report(INPUT_FILE)
     
-    print("Generating corporate HTML report...")
-    generate_html(data, OUTPUT_FILE)
+    # Generate output filename based on date range
+    try:
+        date_from = datetime.strptime(data['date_from'], '%Y-%m-%d')
+        date_to = datetime.strptime(data['date_to'], '%Y-%m-%d')
+        start_str = date_from.strftime('%d_%b')
+        end_str = date_to.strftime('%d_%b')
+        output_file = f"MM_Report_{start_str}_-_{end_str}.html"
+    except:
+        output_file = "MM_Report.html"
+    
+    print(f"Generating corporate HTML report: {output_file}")
+    generate_html(data, output_file)
     
     print("Done!")
 
