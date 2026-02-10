@@ -186,7 +186,7 @@ def generate_html(data, output_path):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mailchimp Email Analytics Report</title>
+    <title>Market Minder Email Analytics Report</title>
     <style>
         @page {{
             size: A4 landscape;
@@ -628,7 +628,7 @@ def generate_html(data, output_path):
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="header-title">Mailchimp Email Analytics Report</h1>
+            <h1 class="header-title">Market Minder Email Analytics Report</h1>
             <div class="header-meta">
                 Report Period: {data['date_from']} to {data['date_to']} | Generated: {data['generated']}
             </div>
@@ -717,6 +717,9 @@ def generate_html(data, output_path):
                                 <div class="bar-value">{metrics['sent']:,} (100%)</div>
                             </div>
                         </div>
+                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
+                            Total emails sent from Market Minder
+                        </div>
 """
     
     # Delivered
@@ -730,9 +733,9 @@ def generate_html(data, output_path):
                         </div>
 """
     
-    # Not delivered note
+    # Delivered note
     html += f"""                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
-                            {metrics['not_delivered_rate']}% not delivered
+                            Emails successfully reached recipient inboxes
                         </div>
 """
     
@@ -747,9 +750,9 @@ def generate_html(data, output_path):
                         </div>
 """
     
-    # Not engaged note
+    # Opened note
     html += f"""                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
-                            {metrics['not_engaged_rate']}% did not engage
+                            Recipients who opened the email
                         </div>
 """
     
@@ -762,6 +765,9 @@ def generate_html(data, output_path):
                                 <div class="bar-value">{metrics['failures']:,} ({metrics['failure_rate']}%)</div>
                             </div>
                         </div>
+                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
+                            Emails that couldn't be delivered due to incorrect email addresses or temporary issues
+                        </div>
 """
     
     # Unsubscribed
@@ -772,6 +778,9 @@ def generate_html(data, output_path):
                                 <div class="bar" style="width: {unsub_width}%"></div>
                                 <div class="bar-value">{metrics['unsubscribed']:,} ({metrics['unsubscribe_rate']}%)</div>
                             </div>
+                        </div>
+                        <div class="bar-chart-row" style="margin-left: 130px; font-size: 10px; color: #64748b; margin-top: -8px; margin-bottom: 8px;">
+                            Recipients who opted out of future emails
                         </div>
 """
     
@@ -1025,7 +1034,7 @@ def generate_html(data, output_path):
         
         <footer class="footer">
             <p>Generated on {data['generated']}</p>
-            <p>Mailchimp Email Analytics Report</p>
+            <p>Market Minder Email Analytics Report</p>
         </footer>
     </div>
 </body>
