@@ -602,6 +602,11 @@ def generate_html(data, output_path):
                     <div class="metric-subtext">All users combined</div>
                 </div>
                 <div class="metric-card">
+                    <div class="metric-label">Target Achievement</div>
+                    <div class="metric-value">{data['overall_achievement']:.1f}%</div>
+                    <div class="metric-subtext">Of 500 emails/user/day</div>
+                </div>
+                <div class="metric-card">
                     <div class="metric-label">Active Days</div>
                     <div class="metric-value">{data['active_days']}</div>
                     <div class="metric-subtext">Days with activity</div>
@@ -610,11 +615,6 @@ def generate_html(data, output_path):
                     <div class="metric-label">Unique Senders</div>
                     <div class="metric-value">{data['unique_senders']}</div>
                     <div class="metric-subtext">Active email senders</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">Target Achievement</div>
-                    <div class="metric-value">{data['overall_achievement']:.1f}%</div>
-                    <div class="metric-subtext">Of 500 emails/user/day</div>
                 </div>
             </section>
             
@@ -952,7 +952,8 @@ def main():
         date_to = datetime.strptime(data['date_to'], '%Y-%m-%d')
         start_str = date_from.strftime('%d_%b')
         end_str = date_to.strftime('%d_%b')
-        output_file = f"MM_Report_{start_str}_-_{end_str}.html"
+        # output_file = f"MM_Report_{start_str}_-_{end_str}.html"
+        output_file = f"test.html"
     except:
         output_file = "MM_Report.html"
     

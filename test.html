@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp Email Analytics Report</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            width: 100%;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a202c;
+            font-size: 12px;
+            line-height: 1.4;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            background-color: #ffffff;
+            border-radius: 0;
+            overflow: visible;
+        }
+        
+        .header {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            padding: 24px 32px;
+            border-bottom: 1px solid #1e40af;
+        }
+        
+        .header-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+        }
+        
+        .header-meta {
+            font-size: 11px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .content {
+            padding: 24px 32px;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .metric-card {
+            background-color: #ffffff;
+            border: 1px solid #dbe3ef;
+            border-radius: 6px;
+            padding: 16px;
+        }
+        
+        .metric-label {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .metric-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e3a8a;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        
+        .metric-subtext {
+            font-size: 10px;
+            color: #64748b;
+        }
+        
+        .section {
+            margin-bottom: 32px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background-color: #3b82f6;
+            margin-bottom: 16px;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+        
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #dbe3ef;
+            border-radius: 6px;
+            padding: 16px;
+        }
+        
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            table-layout: fixed;
+            word-break: break-word;
+        }
+        
+        thead {
+            background-color: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            display: table-header-group;
+        }
+        
+        th {
+            padding: 6px;
+            text-align: left;
+            font-weight: 600;
+            color: #475569;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 0.05em;
+        }
+        
+        th.numeric {
+            text-align: right;
+        }
+        
+        td {
+            padding: 6px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        td.numeric {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .badge-yes {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .badge-no {
+            background-color: #f1f5f9;
+            color: #64748b;
+        }
+        
+        .badge-active {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .badge-inactive {
+            background-color: #f1f5f9;
+            color: #64748b;
+        }
+        
+        .progress-bar {
+            height: 20px;
+            background-color: #f1f5f9;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #3b82f6;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            color: #ffffff;
+            font-size: 9px;
+            font-weight: 600;
+        }
+        
+        .bar-chart-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .bar-label {
+            width: 120px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #334155;
+        }
+        
+        .bar-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        
+        .bar {
+            height: 20px;
+            background-color: #3b82f6;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+        
+        .bar-value {
+            font-size: 11px;
+            color: #64748b;
+            font-variant-numeric: tabular-nums;
+            min-width: 100px;
+        }
+        
+        .heatmap-container {
+            overflow-x: visible;
+        }
+        
+        .heatmap-table {
+            min-width: auto;
+        }
+        
+        .heatmap-table td {
+            text-align: center;
+            font-variant-numeric: tabular-nums;
+            font-weight: 500;
+        }
+        
+        .heat-0 {
+            background-color: #f1f5f9;
+            color: #94a3b8;
+        }
+        
+        .heat-1 {
+            background-color: #e0f2fe;
+            color: #075985;
+        }
+        
+        .heat-2 {
+            background-color: #bae6fd;
+            color: #075985;
+        }
+        
+        .heat-3 {
+            background-color: #7dd3fc;
+            color: #0c4a6e;
+        }
+        
+        .heat-4 {
+            background-color: #38bdf8;
+            color: #0c4a6e;
+        }
+        
+        .heat-5 {
+            background-color: #0ea5e9;
+            color: #ffffff;
+        }
+        
+        .heat-6 {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+        
+        .top-performers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .performer-card {
+            border: 1px solid #e2e8f0;
+            border-left: 3px solid #3b82f6;
+            padding: 12px;
+            border-radius: 6px;
+            background-color: #ffffff;
+        }
+        
+        .performer-rank {
+            font-size: 9px;
+            text-transform: uppercase;
+            color: #64748b;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+        
+        .performer-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 3px;
+        }
+        
+        .performer-value {
+            font-size: 11px;
+            color: #64748b;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .observations-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .observations-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .observations-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .observation-title {
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 4px;
+            font-size: 12px;
+        }
+        
+        .observation-text {
+            color: #475569;
+            font-size: 11px;
+        }
+        
+        .footer {
+            background-color: #f8fafc;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 10px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        h1 {
+            font-size: 22px;
+        }
+        
+        h2 {
+            font-size: 18px;
+        }
+        
+        h3 {
+            font-size: 14px;
+        }
+        
+        section {
+            page-break-inside: avoid;
+        }
+        
+        .card {
+            page-break-inside: avoid;
+        }
+        
+        table {
+            page-break-inside: avoid;
+        }
+        
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+        
+        @media print {
+            html, body {
+                width: 100%;
+                background: #ffffff;
+            }
+            
+            * {
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+            
+            .container {
+                border-radius: 0;
+            }
+            
+            .header {
+                position: static;
+            }
+            
+            .section-divider {
+                background: #3b82f6;
+            }
+            
+            .metric-card, .card, .performer-card {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-title">Mailchimp Email Analytics Report</h1>
+            <div class="header-meta">
+                Report Period: 2026-01-27 to 2026-02-07 | Generated: 2026-02-09 18:06:00
+            </div>
+        </header>
+        
+        <main class="content">
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Total Emails Sent</div>
+                    <div class="metric-value">16,164</div>
+                    <div class="metric-subtext">All users combined</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Target Achievement</div>
+                    <div class="metric-value">35.9%</div>
+                    <div class="metric-subtext">Of 500 emails/user/day</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Active Days</div>
+                    <div class="metric-value">10</div>
+                    <div class="metric-subtext">Days with activity</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Unique Senders</div>
+                    <div class="metric-value">14</div>
+                    <div class="metric-subtext">Active email senders</div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">User Status and Event Distribution</h2>
+                <div class="section-divider"></div>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3 class="card-title">User Status Overview</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th class="numeric">Count</th>
+                                    <th class="numeric">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Total Registered</td>
+                                    <td class="numeric">85</td>
+                                    <td class="numeric">100%</td>
+                                </tr>
+                                <tr>
+                                    <td>Active Users</td>
+                                    <td class="numeric">27</td>
+                                    <td class="numeric">31.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>Inactive Users</td>
+                                    <td class="numeric">58</td>
+                                    <td class="numeric">68.2%</td>
+                                </tr>
+                                <tr>
+                                    <td>Users with Activity</td>
+                                    <td class="numeric">9</td>
+                                    <td class="numeric">—</td>
+                                </tr>
+                                <tr>
+                                    <td>Users No Activity</td>
+                                    <td class="numeric">76</td>
+                                    <td class="numeric">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="card-title">Event Type Distribution</h3>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Send</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 100.0%"></div>
+                                <div class="bar-value">16,177 (41.1%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Delivered</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 81.41188106571057%"></div>
+                                <div class="bar-value">13,170 (33.5%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Open</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 17.685603016628544%"></div>
+                                <div class="bar-value">2,861 (7.3%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Deferral</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 16.820176794214007%"></div>
+                                <div class="bar-value">2,721 (6.9%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Soft bounce</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 13.154478580700996%"></div>
+                                <div class="bar-value">2,128 (5.4%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Unsub</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 5.4212771218396485%"></div>
+                                <div class="bar-value">877 (2.2%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-row">
+                            <div class="bar-label">Hard bounce</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 3.665698213513012%"></div>
+                                <div class="bar-value">593 (1.5%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Top Senders Activity</h2>
+                <div class="section-divider"></div>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sender Email</th>
+                                <th>Registered</th>
+                                <th class="numeric">Total Sent</th>
+                                <th class="numeric">Active Days</th>
+                                <th class="numeric">Avg/Day</th>
+                                <th class="numeric">Max/Day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>edas@compunnel.com</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">8,856</td>
+                                <td class="numeric">4</td>
+                                <td class="numeric">2214.0</td>
+                                <td class="numeric">4344</td>
+                            </tr>
+                            <tr>
+                                <td>amalhotra@compunnel.com</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">2,070</td>
+                                <td class="numeric">5</td>
+                                <td class="numeric">414.0</td>
+                                <td class="numeric">852</td>
+                            </tr>
+                            <tr>
+                                <td>santosh.kumar@compunnel.com</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">1,742</td>
+                                <td class="numeric">7</td>
+                                <td class="numeric">248.9</td>
+                                <td class="numeric">469</td>
+                            </tr>
+                            <tr>
+                                <td>rajkumar@compunnel.com</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">1,464</td>
+                                <td class="numeric">4</td>
+                                <td class="numeric">366.0</td>
+                                <td class="numeric">489</td>
+                            </tr>
+                            <tr>
+                                <td>ajay.kumar@compunnel.us</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">1,227</td>
+                                <td class="numeric">2</td>
+                                <td class="numeric">613.5</td>
+                                <td class="numeric">737</td>
+                            </tr>
+                            <tr>
+                                <td>naresh.kothapalli@compunnel.com</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">799</td>
+                                <td class="numeric">2</td>
+                                <td class="numeric">399.5</td>
+                                <td class="numeric">470</td>
+                            </tr>
+                            <tr>
+                                <td>sambhav.soni@compunneldigital.com</td>
+                                <td><span class="badge badge-no">No</span></td>
+                                <td class="numeric">6</td>
+                                <td class="numeric">2</td>
+                                <td class="numeric">3.0</td>
+                                <td class="numeric">3</td>
+                            </tr>
+                            <tr>
+                                <td>nkumar@compunnel.com</td>
+                                <td><span class="badge badge-yes">Yes</span></td>
+                                <td class="numeric">3</td>
+                                <td class="numeric">1</td>
+                                <td class="numeric">3.0</td>
+                                <td class="numeric">3</td>
+                            </tr>
+                            <tr>
+                                <td>ajay@compunnel.com</td>
+                                <td><span class="badge badge-no">No</span></td>
+                                <td class="numeric">3</td>
+                                <td class="numeric">1</td>
+                                <td class="numeric">3.0</td>
+                                <td class="numeric">3</td>
+                            </tr>
+                            <tr>
+                                <td>sambhav.soni@compunnel.us</td>
+                                <td><span class="badge badge-no">No</span></td>
+                                <td class="numeric">2</td>
+                                <td class="numeric">1</td>
+                                <td class="numeric">2.0</td>
+                                <td class="numeric">2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Weekly Email Activity Pattern</h2>
+                <div class="section-divider"></div>
+                <div class="card heatmap-container">
+                    <table class="heatmap-table">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th class='numeric'>01-27</th>
+                                <th class='numeric'>01-28</th>
+                                <th class='numeric'>01-29</th>
+                                <th class='numeric'>01-30</th>
+                                <th class='numeric'>02-02</th>
+                                <th class='numeric'>02-03</th>
+                                <th class='numeric'>02-04</th>
+                                <th class='numeric'>02-05</th>
+                                <th class='numeric'>02-06</th>
+                                <th class='numeric'>02-07</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ernapati Mariya Das</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-6'>916</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Akash Malhotra</td>
+                                <td class='heat-2'>290</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-1'>66</td>
+                                <td class='heat-6'>852</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-5'>634</td>
+                                <td class='heat-2'>228</td>
+                            </tr>
+                            <tr>
+                                <td>S Santosh Kumar</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-1'>4</td>
+                                <td class='heat-2'>286</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-2'>274</td>
+                                <td class='heat-2'>240</td>
+                                <td class='heat-3'>441</td>
+                                <td class='heat-1'>28</td>
+                                <td class='heat-4'>469</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Pydipamula Raju Kumar</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-1'>12</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-4'>489</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-4'>475</td>
+                                <td class='heat-4'>488</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Ajay Kumar B</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-5'>737</td>
+                                <td class='heat-4'>490</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Kothapalli Naresh</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-3'>329</td>
+                                <td class='heat-4'>470</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Naresh Kumar</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-1'>3</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Ram Patwari</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-1'>2</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                            <tr>
+                                <td>Rahul Kumar</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-1'>1</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                                <td class='heat-0'>—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">User Email Volume</h2>
+                <div class="section-divider"></div>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>Status</th>
+                                <th class="numeric">Sent</th>
+                                <th class="numeric">Delivered</th>
+                                <th>Delivery Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ernapati Mariya Das</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">8,856</td>
+                                <td class="numeric">6,489</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 73.3%">73.3%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Akash Malhotra</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">2,070</td>
+                                <td class="numeric">1,995</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 96.4%">96.4%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>S Santosh Kumar</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">1,742</td>
+                                <td class="numeric">1,738</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 99.8%">99.8%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pydipamula Raju Kumar</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">1,464</td>
+                                <td class="numeric">1,128</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 77.0%">77.0%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ajay Kumar B</td>
+                                <td><span class="badge badge-inactive">INACTIVE</span></td>
+                                <td class="numeric">1,227</td>
+                                <td class="numeric">1,145</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 93.3%">93.3%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kothapalli Naresh</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">799</td>
+                                <td class="numeric">656</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 82.1%">82.1%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Naresh Kumar</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">3</td>
+                                <td class="numeric">3</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100.0%">100.0%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ram Patwari</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">2</td>
+                                <td class="numeric">2</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100.0%">100.0%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Rahul Kumar</td>
+                                <td><span class="badge badge-active">ACTIVE</span></td>
+                                <td class="numeric">1</td>
+                                <td class="numeric">1</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100.0%">100.0%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Performance Analysis</h2>
+                <div class="section-divider"></div>
+                <div class="card">
+                    <h3 class="card-title">Target Achievement Summary</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th class="numeric">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Emails Sent</td>
+                                <td class="numeric">16,164</td>
+                            </tr>
+                            <tr>
+                                <td>Total Expected (at 100%)</td>
+                                <td class="numeric">45,000</td>
+                            </tr>
+                            <tr>
+                                <td>Overall Achievement</td>
+                                <td class="numeric">35.9%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 24px;">
+                        <div class="progress-bar" style="height: 32px;">
+                            <div class="progress-fill" style="width: 35.9%">35.9% of Target</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Top Performers</h2>
+                <div class="section-divider"></div>
+                <div class="top-performers-grid">
+                    <div>
+                        <h3 class="card-title">By Total Volume</h3>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 1</div>
+                            <div class="performer-name">Ernapati Mariya Das</div>
+                            <div class="performer-value">8,856 emails</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 2</div>
+                            <div class="performer-name">Akash Malhotra</div>
+                            <div class="performer-value">2,070 emails</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 3</div>
+                            <div class="performer-name">S Santosh Kumar</div>
+                            <div class="performer-value">1,742 emails</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 4</div>
+                            <div class="performer-name">Pydipamula Raju Kumar</div>
+                            <div class="performer-value">1,464 emails</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 5</div>
+                            <div class="performer-name">Ajay Kumar B</div>
+                            <div class="performer-value">1,227 emails</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="card-title">By Daily Average</h3>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 1</div>
+                            <div class="performer-name">Ernapati Mariya Das</div>
+                            <div class="performer-value">2214.0 emails/day</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 2</div>
+                            <div class="performer-name">Ajay Kumar B</div>
+                            <div class="performer-value">613.5 emails/day</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 3</div>
+                            <div class="performer-name">Akash Malhotra</div>
+                            <div class="performer-value">414.0 emails/day</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 4</div>
+                            <div class="performer-name">Kothapalli Naresh</div>
+                            <div class="performer-value">399.5 emails/day</div>
+                        </div>
+                        <div class="performer-card">
+                            <div class="performer-rank">Rank 5</div>
+                            <div class="performer-name">Pydipamula Raju Kumar</div>
+                            <div class="performer-value">366.0 emails/day</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Key Observations</h2>
+                <div class="section-divider"></div>
+                <div class="card">
+                    <ul class="observations-list">
+                        <li>
+                            <div class="observation-title">User Engagement</div>
+                            <div class="observation-text">Only 9 out of 85 registered users (10%) showed email activity during this period.</div>
+                        </li>
+                        <li>
+                            <div class="observation-title">Target Achievement</div>
+                            <div class="observation-text">Overall target achievement is 35.9%, indicating the team is performing below the 500 emails/user/day target.</div>
+                        </li>
+                        <li>
+                            <div class="observation-title">Top Performer</div>
+                            <div class="observation-text">Ernapati Mariya Das leads with 8,856 total emails sent.</div>
+                        </li>
+                        <li>
+                            <div class="observation-title">Delivery Rate</div>
+                            <div class="observation-text">Top performers maintain 96-100% delivery rates, indicating good email hygiene.</div>
+                        </li>
+                        <li>
+                            <div class="observation-title">Active Days</div>
+                            <div class="observation-text">The report covers 10 days of activity from 2026-01-27 to 2026-02-07.</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>Generated on 2026-02-09 18:06:00</p>
+            <p>Mailchimp Email Analytics Report</p>
+        </footer>
+    </div>
+</body>
+</html>
