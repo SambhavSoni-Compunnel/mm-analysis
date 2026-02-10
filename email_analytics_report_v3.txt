@@ -1,0 +1,625 @@
+================================================================================
+MAILCHIMP EMAIL ANALYTICS REPORT
+Generated: 2026-02-09 18:06:00
+================================================================================
+
+--------------------------------------------------------------------------------
+SECTION 1: ACTIVE / INACTIVE USERS
+--------------------------------------------------------------------------------
+
+Total Registered Users: 85
+Active Users: 27 (31.8%)
+Inactive Users: 58 (68.2%)
+
+-- Active Users List --
+    1. Aashish Sharma                      | aashish.sharma@compunnel.us
+    2. Arpit Bhargawa                      | abhargava@compunnel.us
+    3. Abhishek Chakravorty                | achakravorty@compunnel.us
+    4. Amit Kumar                          | akumar@compunnel.us
+    5. Akash Malhotra                      | amalhotra@compunnel.us
+    6. Ankit Kumar Thakur                  | ankit.thakur@compunnel.us
+    7. Anuj Sharma                         | anuj.sharma@compunnel.us
+    8. Aalekh Panwar                       | apanwar@compunnel.us
+    9. Bhupendra Kumar Bhatt               | bbhatt@compunnel.us
+   10. Binita Pareek                       | binita.pareek@compunnel.us
+   11. Ernapati Mariya Das                 | edas@compunnel.us
+   12. Khajan Singh                        | khajan.singh@compunnel.us
+   13. Kothapalli Naresh                   | naresh.kothapalli@compunnel.us
+   14. Naveen Reddy                        | naveen.reddy@compunnel.us
+   15. Naresh Kumar                        | nkumar@compunnel.us
+   16. Phani Raju                          | praju@compunnel.us
+   17. Prashant Chaudhary                  | prashant.chaudhary@compunnel.us
+   18. Prashant Yadav                      | prashant.yadav@compunnel.us
+   19. Preeti Singh                        | preeti.singh@compunnel.us
+   20. Pydipamula Raju Kumar               | rajkumar@compunnel.us
+   21. Ranjeet Singh Bhambra               | rbhambra@compunnel.us
+   22. Rahul Kumar                         | rkumar@compunnel.us
+   23. Ram Patwari                         | rpatvari@compunnel.us
+   24. S Santosh Kumar                     | santosh.kumar@compunnel.us
+   25. Shantanu Gir                        | shantanu.gir@compunnel.us
+   26. Siddhant Revankar                   | siddhant.revankar@compunnel.us
+   27. Sudhendu S Shirodkar                | sudhendu@compunnel.us
+
+-- Inactive Users List --
+    1. Aaishna Gupta                       | aaishna.gupta@compunnel.us
+    2. Abel Braganza                       | abraganza@compunnel.us
+    3. Akanksha Chaudhary                  | achaudhary@compunnel.us
+    4. Adesh Sikarwar                      | adesh.sikarwar@compunnel.us
+    5. Ajay Kumar B                        | ajay.kumar@compunnel.us
+    6. Amarender Jetti                     | ajetti@compunnel.us
+    7. Aradhay Mehra                       | amehra@compunnel.us
+    8. Anil Narela                         | anerela@compunnel.us
+    9. Akash Rangria                       | arangria@compunnel.us
+   10. Chenna Reddy                        | creddy@compunnel.us
+   11. Donald Pereira                      | dpereira@compunnel.us
+   12. Dhiraj Sharma                       | dsharma@compunnel.us
+   13. Eleajar John                        | eleajar.john@compunnel.us
+   14. Sairam Reddy Guddeti                | g.sai@compunnel.us
+   15. Gorle Gopala Krishna                | gkrishna@compunnel.us
+   16. Gajula Surendar Reddy               | greddy@compunnel.us
+   17. Samudrala Hanshita                  | hanshita.s@compunnel.us
+   18. Himanshu Sharma                     | hsharma@compunnel.us
+   19. Jennifer Gladwin                    | jennifer.gladwin@compunnel.us
+   20. K Sai Dhanush                       | karna.dhanush@compunnel.us
+   21. Karthik Kola                        | karthik.kola@compunnel.us
+   22. Koppisetty Ravi Chandra             | kchandra@compunnel.us
+   23. Kamal Joshi                         | kjoshi@compunnel.us
+   24. Vijay Kumar Belkune                 | kumar.vijay@compunnel.us
+   25. Mahesh Basa                         | mahesh@compunnel.us
+   26. Muddasu Manasa                      | manasa@compunnel.us
+   27. Melroy Domingos Dsouza              | melroy@compunnel.us
+   28. Mangesh Shenvi                      | mshenvi@compunnel.us
+   29. Mukesh Kumar Tiwari                 | mukesh.tiwari@compunnel.us
+   30. Neha Kumari Sharma                  | neha.kumari@compunnel.us
+   31. Nikhil Jitendra Pattir              | nikhil.pattir@compunnel.us
+   32. Nimisha Umesh Goankar               | nimisha.goankar@compunnel.us
+   33. Nitin Sharma                        | nitin.sharma@compunnel.us
+   34. Domaciano Olsen Cabral              | olsen.cabral@compunnel.us
+   35. Omkar Keshav Kunkolkar              | omkar.kunkolkar@compunnel.us
+   36. P Rajesh                            | p.rajesh@compunnel.us
+   37. Parv Rathi                          | parv.rathi@compunnel.us
+   38. Parul Priya                         | ppriya@compunnel.us
+   39. Pranav Shriram                      | pranav.shriram@compunnel.us
+   40. Preeti Singh                        | preeti.singh1@compunnel.us
+   41. Akula Rajneesh Yadav                | rajneesh@compunnel.us
+   42. Raschel Gomes                       | raschel.gomes@compunnel.us
+   43. SaiNath Rao Gajjela                 | sainath@compunnel.us
+   44. Akavaram Sandeep Reddy              | sandeep.reddy@compunnel.us
+   45. Sandipan Das                        | sandipan.das@compunnel.us
+   46. Gadde V Satya Chowdary              | satyag@compunnel.us
+   47. Dushetti Santhosh Kumar             | sdushetty@compunnel.us
+   48. Shrawan Prasad                      | shrawan.prasad@compunnel.us
+   49. Shreyash Kumar                      | shreyash.kumar@compunnel.us
+   50. Sanjit Saji Joseph                  | sjoseph@compunnel.us
+   51. Shaik Rahamath                      | srahamath@compunnel.us
+   52. Siddhant Revankar                   | srevankar@compunnel.us
+   53. Vijay Dwivedi                       | vdwivedi@compunnel.us
+   54. Vipin Augustine                     | vipin.augustin@compunnel.us
+   55. Vansh Tomar                         | vtomar@compunnel.us
+   56. Wilander Pinto                      | wpinto@compunnel.us
+   57. Xavier Thomas Ferrao                | xavier.ferrao@compunnel.us
+   58. Yogesh Singh Rajput                 | yogesh.rajput@compunnel.us
+
+--------------------------------------------------------------------------------
+SECTION 2: OVERALL EVENT SUMMARY
+--------------------------------------------------------------------------------
+
+Total Events: 39,357
+  - Send        :   16,177 (41.1%)
+  - Delivered   :   13,170 (33.5%)
+  - Open        :    2,861 (7.3%)
+  - Deferral    :    2,721 (6.9%)
+  - Soft_bounce :    2,128 (5.4%)
+  - Unsub       :      877 (2.2%)
+  - Hard_bounce :      593 (1.5%)
+  - Click       :      565 (1.4%)
+  - Reject      :      265 (0.7%)
+
+Date Range: 2026-01-27 to 2026-02-07
+Total Days with Activity: 10
+Total Weeks with Activity: 2
+Unique Senders in Events: 14
+
+--------------------------------------------------------------------------------
+SECTION 2B: ALL SENDERS ACTIVITY (Including Non-Registered)
+--------------------------------------------------------------------------------
+
+Sender Email                                  |  Registered  | Total Sent | Active Days |  Avg/Day |  Max/Day
+--------------------------------------------------------------------------------------------------------------
+edas@compunnel.com                            |     Yes      |      8,856 |           4 |   2214.0 |     4344
+amalhotra@compunnel.com                       |     Yes      |      2,070 |           5 |    414.0 |      852
+santosh.kumar@compunnel.com                   |     Yes      |      1,742 |           7 |    248.9 |      469
+rajkumar@compunnel.com                        |     Yes      |      1,464 |           4 |    366.0 |      489
+ajay.kumar@compunnel.us                       |     Yes      |      1,227 |           2 |    613.5 |      737
+naresh.kothapalli@compunnel.com               |     Yes      |        799 |           2 |    399.5 |      470
+sambhav.soni@compunneldigital.com             |      No      |          6 |           2 |      3.0 |        3
+nkumar@compunnel.com                          |     Yes      |          3 |           1 |      3.0 |        3
+ajay@compunnel.com                            |      No      |          3 |           1 |      3.0 |        3
+sambhav.soni@compunnel.us                     |      No      |          2 |           1 |      2.0 |        2
+shubham.rastogi@compunnel.com                 |      No      |          2 |           1 |      2.0 |        2
+rpatvari@compunnel.com                        |     Yes      |          2 |           1 |      2.0 |        2
+rkumar@compunnel.us                           |     Yes      |          1 |           1 |      1.0 |        1
+
+Total Active Senders: 13
+Registered Users Sending: 9
+Non-Registered Senders: 4
+
+-- Non-Registered Senders (sending but not in users list) --
+    1. sambhav.soni@compunneldigital.com             |        6 emails sent
+    2. ajay@compunnel.com                            |        3 emails sent
+    3. sambhav.soni@compunnel.us                     |        2 emails sent
+    4. shubham.rastogi@compunnel.com                 |        2 emails sent
+
+--------------------------------------------------------------------------------
+SECTION 3: EMAILS SENT & DELIVERED PER USER
+--------------------------------------------------------------------------------
+
+-- User Email Volume Summary (Sorted by Total Sent) --
+
+User Name                      | Status   | Total Sent |  Delivered | Del.Rate | Active Days |  Avg/Day |  Max/Day
+------------------------------------------------------------------------------------------------------------------------
+Ernapati Mariya Das            | active   |      8,856 |      6,489 |    73.3% |           4 |   2214.0 |     4344
+Akash Malhotra                 | active   |      2,070 |      1,995 |    96.4% |           5 |    414.0 |      852
+S Santosh Kumar                | active   |      1,742 |      1,738 |    99.8% |           7 |    248.9 |      469
+Pydipamula Raju Kumar          | active   |      1,464 |      1,128 |    77.0% |           4 |    366.0 |      489
+Ajay Kumar B                   | inactive |      1,227 |      1,145 |    93.3% |           2 |    613.5 |      737
+Kothapalli Naresh              | active   |        799 |        656 |    82.1% |           2 |    399.5 |      470
+Naresh Kumar                   | active   |          3 |          3 |   100.0% |           1 |      3.0 |        3
+Ram Patwari                    | active   |          2 |          2 |   100.0% |           1 |      2.0 |        2
+Rahul Kumar                    | active   |          1 |          1 |   100.0% |           1 |      1.0 |        1
+Siddhant Revankar              | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Prashant Chaudhary             | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Aaishna Gupta                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Aalekh Panwar                  | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Aashish Sharma                 | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Abel Braganza                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Abhishek Chakravorty           | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Adesh Sikarwar                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Anil Narela                    | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Akanksha Chaudhary             | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Akavaram Sandeep Reddy         | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Akula Rajneesh Yadav           | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Amarender Jetti                | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Amit Kumar                     | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Ankit Kumar Thakur             | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Anuj Sharma                    | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Aradhay Mehra                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Arpit Bhargawa                 | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Bhupendra Kumar Bhatt          | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Binita Pareek                  | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Chenna Reddy                   | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Dhiraj Sharma                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Domaciano Olsen Cabral         | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Donald Pereira                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Dushetti Santhosh Kumar        | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Gadde V Satya Chowdary         | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Gajula Surendar Reddy          | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Gorle Gopala Krishna           | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Himanshu Sharma                | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Jennifer Gladwin               | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+K Sai Dhanush                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Kamal Joshi                    | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Khajan Singh                   | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Koppisetty Ravi Chandra        | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Mahesh Basa                    | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Mangesh Shenvi                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Melroy Domingos Dsouza         | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Muddasu Manasa                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Mukesh Kumar Tiwari            | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Naveen Reddy                   | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Neha Kumari Sharma             | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Nikhil Jitendra Pattir         | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Nimisha Umesh Goankar          | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Nitin Sharma                   | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Omkar Keshav Kunkolkar         | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+P Rajesh                       | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Parul Priya                    | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Parv Rathi                     | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Phani Raju                     | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Pranav Shriram                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Prashant Yadav                 | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Ranjeet Singh Bhambra          | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+SaiNath Rao Gajjela            | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Sairam Reddy Guddeti           | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Samudrala Hanshita             | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Sandipan Das                   | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Sanjit Saji Joseph             | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Shaik Rahamath                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Shantanu Gir                   | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Shrawan Prasad                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Shreyash Kumar                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Siddhant Revankar              | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Sudhendu S Shirodkar           | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Vansh Tomar                    | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Vijay Dwivedi                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Vipin Augustine                | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Vijay Kumar Belkune            | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Wilander Pinto                 | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Xavier Thomas Ferrao           | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Yogesh Singh Rajput            | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Raschel Gomes                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Preeti Singh                   | active   |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Eleajar John                   | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Karthik Kola                   | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Akash Rangria                  | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+Preeti Singh                   | inactive |          0 |          0 |     0.0% |           0 |      0.0 |        0
+
+Users with Email Activity: 9
+Users with No Email Activity: 76
+
+-- Users with No Email Activity --
+    1. Siddhant Revankar                   | siddhant.revankar@compunnel.us           | Status: active
+    2. Prashant Chaudhary                  | prashant.chaudhary@compunnel.us          | Status: active
+    3. Aaishna Gupta                       | aaishna.gupta@compunnel.us               | Status: inactive
+    4. Aalekh Panwar                       | apanwar@compunnel.us                     | Status: active
+    5. Aashish Sharma                      | aashish.sharma@compunnel.us              | Status: active
+    6. Abel Braganza                       | abraganza@compunnel.us                   | Status: inactive
+    7. Abhishek Chakravorty                | achakravorty@compunnel.us                | Status: active
+    8. Adesh Sikarwar                      | adesh.sikarwar@compunnel.us              | Status: inactive
+    9. Anil Narela                         | anerela@compunnel.us                     | Status: inactive
+   10. Akanksha Chaudhary                  | achaudhary@compunnel.us                  | Status: inactive
+   11. Akavaram Sandeep Reddy              | sandeep.reddy@compunnel.us               | Status: inactive
+   12. Akula Rajneesh Yadav                | rajneesh@compunnel.us                    | Status: inactive
+   13. Amarender Jetti                     | ajetti@compunnel.us                      | Status: inactive
+   14. Amit Kumar                          | akumar@compunnel.us                      | Status: active
+   15. Ankit Kumar Thakur                  | ankit.thakur@compunnel.us                | Status: active
+   16. Anuj Sharma                         | anuj.sharma@compunnel.us                 | Status: active
+   17. Aradhay Mehra                       | amehra@compunnel.us                      | Status: inactive
+   18. Arpit Bhargawa                      | abhargava@compunnel.us                   | Status: active
+   19. Bhupendra Kumar Bhatt               | bbhatt@compunnel.us                      | Status: active
+   20. Binita Pareek                       | binita.pareek@compunnel.us               | Status: active
+   21. Chenna Reddy                        | creddy@compunnel.us                      | Status: inactive
+   22. Dhiraj Sharma                       | dsharma@compunnel.us                     | Status: inactive
+   23. Domaciano Olsen Cabral              | olsen.cabral@compunnel.us                | Status: inactive
+   24. Donald Pereira                      | dpereira@compunnel.us                    | Status: inactive
+   25. Dushetti Santhosh Kumar             | sdushetty@compunnel.us                   | Status: inactive
+   26. Gadde V Satya Chowdary              | satyag@compunnel.us                      | Status: inactive
+   27. Gajula Surendar Reddy               | greddy@compunnel.us                      | Status: inactive
+   28. Gorle Gopala Krishna                | gkrishna@compunnel.us                    | Status: inactive
+   29. Himanshu Sharma                     | hsharma@compunnel.us                     | Status: inactive
+   30. Jennifer Gladwin                    | jennifer.gladwin@compunnel.us            | Status: inactive
+   31. K Sai Dhanush                       | karna.dhanush@compunnel.us               | Status: inactive
+   32. Kamal Joshi                         | kjoshi@compunnel.us                      | Status: inactive
+   33. Khajan Singh                        | khajan.singh@compunnel.us                | Status: active
+   34. Koppisetty Ravi Chandra             | kchandra@compunnel.us                    | Status: inactive
+   35. Mahesh Basa                         | mahesh@compunnel.us                      | Status: inactive
+   36. Mangesh Shenvi                      | mshenvi@compunnel.us                     | Status: inactive
+   37. Melroy Domingos Dsouza              | melroy@compunnel.us                      | Status: inactive
+   38. Muddasu Manasa                      | manasa@compunnel.us                      | Status: inactive
+   39. Mukesh Kumar Tiwari                 | mukesh.tiwari@compunnel.us               | Status: inactive
+   40. Naveen Reddy                        | naveen.reddy@compunnel.us                | Status: active
+   41. Neha Kumari Sharma                  | neha.kumari@compunnel.us                 | Status: inactive
+   42. Nikhil Jitendra Pattir              | nikhil.pattir@compunnel.us               | Status: inactive
+   43. Nimisha Umesh Goankar               | nimisha.goankar@compunnel.us             | Status: inactive
+   44. Nitin Sharma                        | nitin.sharma@compunnel.us                | Status: inactive
+   45. Omkar Keshav Kunkolkar              | omkar.kunkolkar@compunnel.us             | Status: inactive
+   46. P Rajesh                            | p.rajesh@compunnel.us                    | Status: inactive
+   47. Parul Priya                         | ppriya@compunnel.us                      | Status: inactive
+   48. Parv Rathi                          | parv.rathi@compunnel.us                  | Status: inactive
+   49. Phani Raju                          | praju@compunnel.us                       | Status: active
+   50. Pranav Shriram                      | pranav.shriram@compunnel.us              | Status: inactive
+   51. Prashant Yadav                      | prashant.yadav@compunnel.us              | Status: active
+   52. Ranjeet Singh Bhambra               | rbhambra@compunnel.us                    | Status: active
+   53. SaiNath Rao Gajjela                 | sainath@compunnel.us                     | Status: inactive
+   54. Sairam Reddy Guddeti                | g.sai@compunnel.us                       | Status: inactive
+   55. Samudrala Hanshita                  | hanshita.s@compunnel.us                  | Status: inactive
+   56. Sandipan Das                        | sandipan.das@compunnel.us                | Status: inactive
+   57. Sanjit Saji Joseph                  | sjoseph@compunnel.us                     | Status: inactive
+   58. Shaik Rahamath                      | srahamath@compunnel.us                   | Status: inactive
+   59. Shantanu Gir                        | shantanu.gir@compunnel.us                | Status: active
+   60. Shrawan Prasad                      | shrawan.prasad@compunnel.us              | Status: inactive
+   61. Shreyash Kumar                      | shreyash.kumar@compunnel.us              | Status: inactive
+   62. Siddhant Revankar                   | srevankar@compunnel.us                   | Status: inactive
+   63. Sudhendu S Shirodkar                | sudhendu@compunnel.us                    | Status: active
+   64. Vansh Tomar                         | vtomar@compunnel.us                      | Status: inactive
+   65. Vijay Dwivedi                       | vdwivedi@compunnel.us                    | Status: inactive
+   66. Vipin Augustine                     | vipin.augustin@compunnel.us              | Status: inactive
+   67. Vijay Kumar Belkune                 | kumar.vijay@compunnel.us                 | Status: inactive
+   68. Wilander Pinto                      | wpinto@compunnel.us                      | Status: inactive
+   69. Xavier Thomas Ferrao                | xavier.ferrao@compunnel.us               | Status: inactive
+   70. Yogesh Singh Rajput                 | yogesh.rajput@compunnel.us               | Status: inactive
+   71. Raschel Gomes                       | raschel.gomes@compunnel.us               | Status: inactive
+   72. Preeti Singh                        | preeti.singh@compunnel.us                | Status: active
+   73. Eleajar John                        | eleajar.john@compunnel.us                | Status: inactive
+   74. Karthik Kola                        | karthik.kola@compunnel.us                | Status: inactive
+   75. Akash Rangria                       | arangria@compunnel.us                    | Status: inactive
+   76. Preeti Singh                        | preeti.singh1@compunnel.us               | Status: inactive
+
+--------------------------------------------------------------------------------
+SECTION 4: DAILY EMAIL FREQUENCY PER USER
+--------------------------------------------------------------------------------
+
+Target: 500 emails per user per day
+
+>>> Ernapati Mariya Das (edas@compunnel.us) - Status: ACTIVE
+    Total Sent: 8,856 | Total Delivered: 6,489 | Active Days: 4
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-02-02   |      916 |        876 |       +416 |  183.2% (ABOVE)
+    2026-02-05   |    2,424 |      1,299 |     +1,924 |  484.8% (ABOVE)
+    2026-02-06   |    1,172 |      1,093 |       +672 |  234.4% (ABOVE)
+    2026-02-07   |    4,344 |      3,221 |     +3,844 |  868.8% (ABOVE)
+
+>>> Akash Malhotra (amalhotra@compunnel.us) - Status: ACTIVE
+    Total Sent: 2,070 | Total Delivered: 1,995 | Active Days: 5
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-01-27   |      290 |        290 |       -210 |   58.0% (BELOW)
+    2026-01-29   |       66 |         66 |       -434 |   13.2% (BELOW)
+    2026-01-30   |      852 |        852 |       +352 |  170.4% (ABOVE)
+    2026-02-06   |      634 |        634 |       +134 |  126.8% (ABOVE)
+    2026-02-07   |      228 |        153 |       -272 |   45.6% (BELOW)
+
+>>> S Santosh Kumar (santosh.kumar@compunnel.us) - Status: ACTIVE
+    Total Sent: 1,742 | Total Delivered: 1,738 | Active Days: 7
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-01-28   |        4 |          4 |       -496 |    0.8% (BELOW)
+    2026-01-29   |      286 |        286 |       -214 |   57.2% (BELOW)
+    2026-02-02   |      274 |        274 |       -226 |   54.8% (BELOW)
+    2026-02-03   |      240 |        240 |       -260 |   48.0% (BELOW)
+    2026-02-04   |      441 |        439 |        -59 |   88.2% (BELOW)
+    2026-02-05   |       28 |         28 |       -472 |    5.6% (BELOW)
+    2026-02-06   |      469 |        467 |        -31 |   93.8% (BELOW)
+
+>>> Pydipamula Raju Kumar (rajkumar@compunnel.us) - Status: ACTIVE
+    Total Sent: 1,464 | Total Delivered: 1,128 | Active Days: 4
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-01-28   |       12 |         12 |       -488 |    2.4% (BELOW)
+    2026-02-02   |      489 |        489 |        -11 |   97.8% (BELOW)
+    2026-02-04   |      475 |        139 |        -25 |   95.0% (BELOW)
+    2026-02-05   |      488 |        488 |        -12 |   97.6% (BELOW)
+
+>>> Ajay Kumar B (ajay.kumar@compunnel.us) - Status: INACTIVE
+    Total Sent: 1,227 | Total Delivered: 1,145 | Active Days: 2
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-02-04   |      737 |        655 |       +237 |  147.4% (ABOVE)
+    2026-02-05   |      490 |        490 |        -10 |   98.0% (BELOW)
+
+>>> Kothapalli Naresh (naresh.kothapalli@compunnel.us) - Status: ACTIVE
+    Total Sent: 799 | Total Delivered: 656 | Active Days: 2
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-02-04   |      329 |        329 |       -171 |   65.8% (BELOW)
+    2026-02-05   |      470 |        327 |        -30 |   94.0% (BELOW)
+
+>>> Naresh Kumar (nkumar@compunnel.us) - Status: ACTIVE
+    Total Sent: 3 | Total Delivered: 3 | Active Days: 1
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-01-28   |        3 |          3 |       -497 |    0.6% (BELOW)
+
+>>> Ram Patwari (rpatvari@compunnel.us) - Status: ACTIVE
+    Total Sent: 2 | Total Delivered: 2 | Active Days: 1
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-02-04   |        2 |          2 |       -498 |    0.4% (BELOW)
+
+>>> Rahul Kumar (rkumar@compunnel.us) - Status: ACTIVE
+    Total Sent: 1 | Total Delivered: 1 | Active Days: 1
+
+    Date         |     Sent |  Delivered |  vs Target |  Performance
+    ------------------------------------------------------------
+    2026-01-28   |        1 |          1 |       -499 |    0.2% (BELOW)
+
+--------------------------------------------------------------------------------
+SECTION 5: WEEKLY EMAIL FREQUENCY PER USER
+--------------------------------------------------------------------------------
+
+Weekly Target (5 working days): 2,500 emails per user per week
+
+>>> Ernapati Mariya Das (edas@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W06   |    8,856 |      6,489 |       +6,356 |  354.2% (ABOVE)
+
+>>> Akash Malhotra (amalhotra@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W05   |    1,208 |      1,208 |       -1,292 |   48.3% (BELOW)
+    2026-W06   |      862 |        787 |       -1,638 |   34.5% (BELOW)
+
+>>> S Santosh Kumar (santosh.kumar@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W05   |      290 |        290 |       -2,210 |   11.6% (BELOW)
+    2026-W06   |    1,452 |      1,448 |       -1,048 |   58.1% (BELOW)
+
+>>> Pydipamula Raju Kumar (rajkumar@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W05   |       12 |         12 |       -2,488 |    0.5% (BELOW)
+    2026-W06   |    1,452 |      1,116 |       -1,048 |   58.1% (BELOW)
+
+>>> Ajay Kumar B (ajay.kumar@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W06   |    1,227 |      1,145 |       -1,273 |   49.1% (BELOW)
+
+>>> Kothapalli Naresh (naresh.kothapalli@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W06   |      799 |        656 |       -1,701 |   32.0% (BELOW)
+
+>>> Naresh Kumar (nkumar@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W05   |        3 |          3 |       -2,497 |    0.1% (BELOW)
+
+>>> Ram Patwari (rpatvari@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W06   |        2 |          2 |       -2,498 |    0.1% (BELOW)
+
+>>> Rahul Kumar (rkumar@compunnel.us)
+
+    Week       |     Sent |  Delivered |    vs Target |  Performance
+    ------------------------------------------------------------
+    2026-W05   |        1 |          1 |       -2,499 |    0.0% (BELOW)
+
+--------------------------------------------------------------------------------
+SECTION 6: TARGET COMPARISON SUMMARY (500 Emails/User/Day)
+--------------------------------------------------------------------------------
+
+Daily Target: 500 emails per user per day
+Weekly Target (5 days): 2,500 emails per user per week
+
+-- Overall Performance --
+Total Emails Sent (all users): 16,164
+Total Expected (at 100% target): 45,000
+Overall Achievement: 35.9%
+
+-- Per-User Daily Target Achievement --
+
+User Name                      |    Avg/Day |   Target |  Achievement | Status         
+------------------------------------------------------------------------------------------
+Ernapati Mariya Das            |     2214.0 |      500 |      442.8% | TARGET MET     
+Akash Malhotra                 |      414.0 |      500 |       82.8% | NEAR TARGET    
+S Santosh Kumar                |      248.9 |      500 |       49.8% | SIGNIFICANTLY BELOW
+Pydipamula Raju Kumar          |      366.0 |      500 |       73.2% | BELOW TARGET   
+Ajay Kumar B                   |      613.5 |      500 |      122.7% | TARGET MET     
+Kothapalli Naresh              |      399.5 |      500 |       79.9% | NEAR TARGET    
+Naresh Kumar                   |        3.0 |      500 |        0.6% | SIGNIFICANTLY BELOW
+Ram Patwari                    |        2.0 |      500 |        0.4% | SIGNIFICANTLY BELOW
+Rahul Kumar                    |        1.0 |      500 |        0.2% | SIGNIFICANTLY BELOW
+Siddhant Revankar              |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Prashant Chaudhary             |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Aaishna Gupta                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Aalekh Panwar                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Aashish Sharma                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Abel Braganza                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Abhishek Chakravorty           |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Adesh Sikarwar                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Anil Narela                    |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Akanksha Chaudhary             |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Akavaram Sandeep Reddy         |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Akula Rajneesh Yadav           |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Amarender Jetti                |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Amit Kumar                     |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Ankit Kumar Thakur             |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Anuj Sharma                    |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Aradhay Mehra                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Arpit Bhargawa                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Bhupendra Kumar Bhatt          |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Binita Pareek                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Chenna Reddy                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Dhiraj Sharma                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Domaciano Olsen Cabral         |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Donald Pereira                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Dushetti Santhosh Kumar        |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Gadde V Satya Chowdary         |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Gajula Surendar Reddy          |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Gorle Gopala Krishna           |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Himanshu Sharma                |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Jennifer Gladwin               |        0.0 |      500 |        0.0% | NO ACTIVITY    
+K Sai Dhanush                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Kamal Joshi                    |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Khajan Singh                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Koppisetty Ravi Chandra        |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Mahesh Basa                    |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Mangesh Shenvi                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Melroy Domingos Dsouza         |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Muddasu Manasa                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Mukesh Kumar Tiwari            |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Naveen Reddy                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Neha Kumari Sharma             |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Nikhil Jitendra Pattir         |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Nimisha Umesh Goankar          |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Nitin Sharma                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Omkar Keshav Kunkolkar         |        0.0 |      500 |        0.0% | NO ACTIVITY    
+P Rajesh                       |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Parul Priya                    |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Parv Rathi                     |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Phani Raju                     |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Pranav Shriram                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Prashant Yadav                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Ranjeet Singh Bhambra          |        0.0 |      500 |        0.0% | NO ACTIVITY    
+SaiNath Rao Gajjela            |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Sairam Reddy Guddeti           |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Samudrala Hanshita             |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Sandipan Das                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Sanjit Saji Joseph             |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Shaik Rahamath                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Shantanu Gir                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Shrawan Prasad                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Shreyash Kumar                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Siddhant Revankar              |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Sudhendu S Shirodkar           |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Vansh Tomar                    |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Vijay Dwivedi                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Vipin Augustine                |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Vijay Kumar Belkune            |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Wilander Pinto                 |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Xavier Thomas Ferrao           |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Yogesh Singh Rajput            |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Raschel Gomes                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Preeti Singh                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Eleajar John                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Karthik Kola                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Akash Rangria                  |        0.0 |      500 |        0.0% | NO ACTIVITY    
+Preeti Singh                   |        0.0 |      500 |        0.0% | NO ACTIVITY    
+
+-- Days Meeting Target (>= 500 emails) --
+  Ernapati Mariya Das                : 4/4 days (100.0%) at or above target
+  Akash Malhotra                     : 2/5 days (40.0%) at or above target
+  S Santosh Kumar                    : 0/7 days (0.0%) at or above target
+  Pydipamula Raju Kumar              : 0/4 days (0.0%) at or above target
+  Ajay Kumar B                       : 1/2 days (50.0%) at or above target
+  Kothapalli Naresh                  : 0/2 days (0.0%) at or above target
+  Naresh Kumar                       : 0/1 days (0.0%) at or above target
+  Ram Patwari                        : 0/1 days (0.0%) at or above target
+  Rahul Kumar                        : 0/1 days (0.0%) at or above target
+
+--------------------------------------------------------------------------------
+SECTION 7: TOP PERFORMERS & STATISTICS
+--------------------------------------------------------------------------------
+
+-- Top 5 by Total Email Volume --
+  1. Ernapati Mariya Das            |      8,856 emails
+  2. Akash Malhotra                 |      2,070 emails
+  3. S Santosh Kumar                |      1,742 emails
+  4. Pydipamula Raju Kumar          |      1,464 emails
+  5. Ajay Kumar B                   |      1,227 emails
+
+-- Top 5 by Daily Average --
+  1. Ernapati Mariya Das            |     2214.0 emails/day
+  2. Ajay Kumar B                   |      613.5 emails/day
+  3. Akash Malhotra                 |      414.0 emails/day
+  4. Kothapalli Naresh              |      399.5 emails/day
+  5. Pydipamula Raju Kumar          |      366.0 emails/day
+
+-- Top 5 by Max Single Day --
+  1. Ernapati Mariya Das            |      4,344 emails
+  2. Akash Malhotra                 |        852 emails
+  3. Ajay Kumar B                   |        737 emails
+  4. Pydipamula Raju Kumar          |        489 emails
+  5. Kothapalli Naresh              |        470 emails
+
+-- Top 5 by Delivery Rate --
+  1. Naresh Kumar                   |      100.0%
+  2. Ram Patwari                    |      100.0%
+  3. Rahul Kumar                    |      100.0%
+  4. S Santosh Kumar                |       99.8%
+  5. Akash Malhotra                 |       96.4%
+
+================================================================================
+END OF REPORT
+================================================================================

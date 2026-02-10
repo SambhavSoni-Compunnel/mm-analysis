@@ -1,0 +1,86 @@
+email,firstname,lastname,creation_date,role_id,status
+siddhant.revankar@compunnel.us,Siddhant,Revankar,2025-12-24 13:16:51.445 +0530,3,active
+prashant.chaudhary@compunnel.us,Prashant,Chaudhary,2025-12-24 13:18:06.358 +0530,3,active
+edas@compunnel.us,Ernapati,Mariya Das,2025-12-24 13:19:11.846 +0530,3,active
+aaishna.gupta@compunnel.us,Aaishna,Gupta,2026-01-27 19:20:12.144 +0530,3,inactive
+apanwar@compunnel.us,Aalekh,Panwar,2026-01-27 19:20:12.144 +0530,3,active
+aashish.sharma@compunnel.us,Aashish,Sharma,2026-01-27 19:20:12.144 +0530,3,active
+abraganza@compunnel.us,Abel,Braganza,2026-01-27 19:20:12.144 +0530,3,inactive
+achakravorty@compunnel.us,Abhishek,Chakravorty,2026-01-27 19:20:12.144 +0530,3,active
+adesh.sikarwar@compunnel.us,Adesh,Sikarwar,2026-01-27 19:20:12.144 +0530,3,inactive
+ajay.kumar@compunnel.us,Ajay,Kumar B,2026-01-27 19:20:12.144 +0530,3,inactive
+anerela@compunnel.us,Anil,Narela,2026-01-27 19:20:12.144 +0530,3,inactive
+achaudhary@compunnel.us,Akanksha,Chaudhary,2026-01-27 19:20:12.144 +0530,2,inactive
+amalhotra@compunnel.us,Akash,Malhotra,2026-01-27 19:20:12.144 +0530,3,active
+sandeep.reddy@compunnel.us,Akavaram,Sandeep Reddy,2026-01-27 19:20:12.144 +0530,3,inactive
+rajneesh@compunnel.us,Akula,Rajneesh Yadav,2026-01-27 19:20:12.144 +0530,3,inactive
+ajetti@compunnel.us,Amarender,Jetti,2026-01-27 19:20:12.144 +0530,3,inactive
+akumar@compunnel.us,Amit,Kumar,2026-01-27 19:20:12.144 +0530,3,active
+ankit.thakur@compunnel.us,Ankit,Kumar Thakur,2026-01-27 19:20:12.144 +0530,3,active
+anuj.sharma@compunnel.us,Anuj,Sharma,2026-01-27 19:20:12.144 +0530,3,active
+amehra@compunnel.us,Aradhay,Mehra,2026-01-27 19:20:12.144 +0530,3,inactive
+abhargava@compunnel.us,Arpit,Bhargawa,2026-01-27 19:20:12.144 +0530,3,active
+bbhatt@compunnel.us,Bhupendra,Kumar Bhatt,2026-01-27 19:20:12.144 +0530,3,active
+binita.pareek@compunnel.us,Binita,Pareek,2026-01-27 19:20:12.144 +0530,3,active
+creddy@compunnel.us,Chenna,Reddy,2026-01-27 19:20:12.144 +0530,3,inactive
+dsharma@compunnel.us,Dhiraj,Sharma,2026-01-27 19:20:12.144 +0530,3,inactive
+olsen.cabral@compunnel.us,Domaciano,Olsen Cabral,2026-01-27 19:20:12.144 +0530,3,inactive
+dpereira@compunnel.us,Donald,Pereira,2026-01-27 19:20:12.144 +0530,3,inactive
+sdushetty@compunnel.us,Dushetti,Santhosh Kumar,2026-01-27 19:20:12.144 +0530,3,inactive
+satyag@compunnel.us,Gadde,V Satya Chowdary,2026-01-27 19:20:12.144 +0530,3,inactive
+greddy@compunnel.us,Gajula,Surendar Reddy,2026-01-27 19:20:12.144 +0530,3,inactive
+gkrishna@compunnel.us,Gorle,Gopala Krishna,2026-01-27 19:20:12.144 +0530,3,inactive
+hsharma@compunnel.us,Himanshu,Sharma,2026-01-27 19:20:12.144 +0530,3,inactive
+jennifer.gladwin@compunnel.us,Jennifer,Gladwin,2026-01-27 19:20:12.144 +0530,3,inactive
+karna.dhanush@compunnel.us,K,Sai Dhanush,2026-01-27 19:20:12.144 +0530,3,inactive
+kjoshi@compunnel.us,Kamal,Joshi,2026-01-27 19:20:12.144 +0530,3,inactive
+khajan.singh@compunnel.us,Khajan,Singh,2026-01-27 19:20:12.144 +0530,3,active
+kchandra@compunnel.us,Koppisetty,Ravi Chandra,2026-01-27 19:20:12.144 +0530,3,inactive
+naresh.kothapalli@compunnel.us,Kothapalli,Naresh,2026-01-27 19:20:12.144 +0530,3,active
+mahesh@compunnel.us,Mahesh,Basa,2026-01-28 11:04:53.821 +0530,3,inactive
+mshenvi@compunnel.us,Mangesh,Shenvi,2026-01-28 11:04:53.821 +0530,3,inactive
+melroy@compunnel.us,Melroy,Domingos Dsouza,2026-01-28 11:04:53.821 +0530,3,inactive
+manasa@compunnel.us,Muddasu,Manasa,2026-01-28 11:04:53.821 +0530,3,inactive
+mukesh.tiwari@compunnel.us,Mukesh,Kumar Tiwari,2026-01-28 11:04:53.821 +0530,3,inactive
+nkumar@compunnel.us,Naresh,Kumar,2026-01-28 11:04:53.821 +0530,3,active
+naveen.reddy@compunnel.us,Naveen,Reddy,2026-01-28 11:04:53.821 +0530,3,active
+neha.kumari@compunnel.us,Neha,Kumari Sharma,2026-01-28 11:04:53.821 +0530,3,inactive
+nikhil.pattir@compunnel.us,Nikhil,Jitendra Pattir,2026-01-28 11:04:53.821 +0530,3,inactive
+nimisha.goankar@compunnel.us,Nimisha,Umesh Goankar,2026-01-28 11:04:53.821 +0530,3,inactive
+nitin.sharma@compunnel.us,Nitin,Sharma,2026-01-28 11:04:53.821 +0530,3,inactive
+omkar.kunkolkar@compunnel.us,Omkar,Keshav Kunkolkar,2026-01-28 11:04:53.821 +0530,3,inactive
+p.rajesh@compunnel.us,P,Rajesh,2026-01-28 11:04:53.821 +0530,3,inactive
+ppriya@compunnel.us,Parul,Priya,2026-01-28 11:04:53.821 +0530,3,inactive
+parv.rathi@compunnel.us,Parv,Rathi,2026-01-28 11:04:53.821 +0530,3,inactive
+praju@compunnel.us,Phani,Raju,2026-01-28 11:04:53.821 +0530,3,active
+pranav.shriram@compunnel.us,Pranav,Shriram,2026-01-28 11:04:53.821 +0530,3,inactive
+prashant.yadav@compunnel.us,Prashant,Yadav,2026-01-28 11:04:53.821 +0530,3,active
+rajkumar@compunnel.us,Pydipamula,Raju Kumar,2026-01-28 11:04:53.821 +0530,3,active
+rkumar@compunnel.us,Rahul,Kumar,2026-01-28 11:04:53.821 +0530,3,active
+rpatvari@compunnel.us,Ram,Patwari,2026-01-28 11:04:53.821 +0530,3,active
+rbhambra@compunnel.us,Ranjeet,Singh Bhambra,2026-01-28 11:04:53.821 +0530,3,active
+sainath@compunnel.us,SaiNath,Rao Gajjela,2026-01-28 11:04:53.821 +0530,3,inactive
+g.sai@compunnel.us,Sairam,Reddy Guddeti,2026-01-28 11:04:53.821 +0530,3,inactive
+hanshita.s@compunnel.us,Samudrala,Hanshita,2026-01-28 11:04:53.821 +0530,3,inactive
+sandipan.das@compunnel.us,Sandipan,Das,2026-01-28 11:04:53.821 +0530,3,inactive
+sjoseph@compunnel.us,Sanjit,Saji Joseph,2026-01-28 11:04:53.821 +0530,3,inactive
+srahamath@compunnel.us,Shaik,Rahamath,2026-01-28 11:04:53.821 +0530,3,inactive
+shantanu.gir@compunnel.us,Shantanu,Gir,2026-01-28 11:04:53.821 +0530,3,active
+shrawan.prasad@compunnel.us,Shrawan,Prasad,2026-01-28 11:04:53.821 +0530,3,inactive
+shreyash.kumar@compunnel.us,Shreyash,Kumar,2026-01-28 11:04:53.821 +0530,3,inactive
+srevankar@compunnel.us,Siddhant,Revankar,2026-01-28 11:04:53.821 +0530,3,inactive
+santosh.kumar@compunnel.us,S,Santosh Kumar,2026-01-28 11:04:53.821 +0530,3,active
+sudhendu@compunnel.us,Sudhendu,S Shirodkar,2026-01-28 11:04:53.821 +0530,3,active
+vtomar@compunnel.us,Vansh,Tomar,2026-01-28 11:04:53.821 +0530,3,inactive
+vdwivedi@compunnel.us,Vijay,Dwivedi,2026-01-28 11:04:53.821 +0530,3,inactive
+vipin.augustin@compunnel.us,Vipin,Augustine,2026-01-28 11:04:53.821 +0530,3,inactive
+kumar.vijay@compunnel.us,Vijay,Kumar Belkune,2026-01-28 11:04:53.821 +0530,3,inactive
+wpinto@compunnel.us,Wilander,Pinto,2026-01-28 11:04:53.821 +0530,3,inactive
+xavier.ferrao@compunnel.us,Xavier,Thomas Ferrao,2026-01-28 11:04:53.821 +0530,3,inactive
+yogesh.rajput@compunnel.us,Yogesh,Singh Rajput,2026-02-03 15:05:29.280 +0530,3,inactive
+raschel.gomes@compunnel.us,Raschel,Gomes,2026-02-03 15:05:29.280 +0530,3,inactive
+preeti.singh@compunnel.us,Preeti,Singh,2026-02-03 15:05:29.280 +0530,3,active
+eleajar.john@compunnel.us,Eleajar,John,2026-02-03 15:05:29.280 +0530,3,inactive
+karthik.kola@compunnel.us,Karthik,Kola,2026-02-03 15:05:29.280 +0530,3,inactive
+arangria@compunnel.us,Akash,Rangria,2026-02-03 15:05:29.280 +0530,3,inactive
+preeti.singh1@compunnel.us,Preeti,Singh,2026-02-03 15:05:29.280 +0530,3,inactive
